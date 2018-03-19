@@ -2,11 +2,11 @@
 Simple SWIFT library for Name, Email, Password and Digit Validation
 
 - [Features](#features)
-- [Name Validation Options](#name Validation Options)
-- [Password Validation Options](#password Validation Options)
+- [Name Validation Options](#nameValidationOptions)
+- [Password Validation Options](#passwordValidationOptions)
 - [Installation](#installation)
 - [Usage](#usage)
-- [TextField Types](#textField Types)
+- [TextField Types](#textFieldTypes)
 
 ## Features
 
@@ -73,7 +73,7 @@ Then you can Pass Field data Array to FormValidator Class.
 
 ```
 
-### TextField Types
+## TextField Types
 
 ```
     case text 
