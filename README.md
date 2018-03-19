@@ -2,8 +2,8 @@
 Simple SWIFT library for Name, Email, Password and Digit Validation
 
 - [Features](#features)
-- [Name Validation Options](#nameValidationOptions)
-- [Password Validation Options](#passwordValidationOptions)
+- [Name Validation Options](#name-validation-options)
+- [Password Validation Options](#password-validation-options)
 - [Installation](#installation)
 - [Usage](#usage)
 - [TextField Types](#textFieldTypes)
