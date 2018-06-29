@@ -43,18 +43,8 @@ Simply copy and paste FormValidator File on your Project :)
 First you need to create FormField Objects in order to pass FormField Array to FormValidator Class.
 
 ```
-    let myEmail = "chathuranga@gmail.com"
-    let myName = "Chathuranga"
-    
-    let emailField = FormField()
-    emailField.fieldName = "Email"
-    emailField.fieldType = TextFieldTypes.email
-    emailField.text = myemail
-
-    let nameField = FormField()
-    nameField.fieldName = "Name"
-    nameField.fieldType = TextFieldTypes.name
-    nameField.text = myname
+    let userEmailForm = FormField(text: self.userEmail.text!, fieldType: .email, fieldName: "Email Address")
+    let userPasswordForm = FormField(text: self.userEmail.text!, fieldType: .password, fieldName: "Password")
 
 ```
 
@@ -63,7 +53,7 @@ First you need to create FormField Objects in order to pass FormField Array to F
 Then you can Pass Field data Array to FormValidator Class.
 
 ```
-    FormValidator.checkFieldsValidity(fields: [emailField, nameField]) { (msg) in
+    FormValidator.checkFieldsValidity(fields: [userEmailForm, userPasswordForm]) { (msg) in
         if msg.valid {
             print("Correct Data")
         } else {
