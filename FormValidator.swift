@@ -92,6 +92,12 @@ class FormField: NSObject {
     var fieldType: TextFieldTypes!
     var fieldName: String!
     
+    init(text: String, fieldType: TextFieldTypes, fieldName: String) {
+        self.text = text
+        self.fieldType = fieldType
+        self.fieldName = fieldName
+    }
+    
 }
 
 /////////////////////////////////// Class FormField  ///////////////////////////////////
@@ -101,8 +107,8 @@ class FormField: NSObject {
 
 class ValidationMessage: NSObject {
     
-    var valid: Bool!
-    var errorMsg: String?
+    var valid: Bool! = true
+    var errorMsg: String? = nil
     
 }
 
