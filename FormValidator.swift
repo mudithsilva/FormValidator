@@ -60,7 +60,7 @@ struct FormValidator {
         let messageText = NSMutableAttributedString(
             string: text,
             attributes: [
-                NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 15.0),
+                NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 15.0),
                 //NSForegroundColorAttributeName : UIColor.blackColor()
             ]
         )
@@ -74,7 +74,7 @@ struct FormValidator {
         let messageText = NSMutableAttributedString(
             string: text,
             attributes: [
-                NSAttributedStringKey.paragraphStyle: paragraphStyle
+                NSAttributedString.Key.paragraphStyle: paragraphStyle
                 //NSFontAttributeName : UIFont.preferredFontForTextStyle(UIFontTextStyleBody),
                 //NSForegroundColorAttributeName : UIColor.blackColor()
             ]
@@ -85,7 +85,6 @@ struct FormValidator {
 }
 
 /////////////////////////////////// Class FormField  ///////////////////////////////////
-
 class FormField: NSObject {
     
     var text: String!
@@ -102,9 +101,7 @@ class FormField: NSObject {
 
 /////////////////////////////////// Class FormField  ///////////////////////////////////
 
-
 /////////////////////////////////// Class ValidationMessage  ///////////////////////////////////
-
 class ValidationMessage: NSObject {
     
     var valid: Bool! = true
@@ -114,9 +111,7 @@ class ValidationMessage: NSObject {
 
 /////////////////////////////////// Class ValidationMessage  ///////////////////////////////////
 
-
 /////////////////////////////////// TextFiled Types Enum  ///////////////////////////////////
-
 
 enum TextFieldTypes: String {
     case text = "^[^ ]+( [^ ]+)*$"
@@ -137,23 +132,16 @@ enum TextFieldTypes: String {
 //^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,}   - Minimum 8 characters at least 1 Uppercase Alphabet, 1 Lowercase Alphabet, 1 Number and 1 Special Character:
 //
 //^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,10}  - Minimum 8 and Maximum 10 characters at least 1 Uppercase Alphabet, 1 Lowercase Alphabet, 1 Number and 1 Special Character:
-
 //^[a-zA-Z0-9~!@#$%^&*(){}=?><:;'"+-_]{8,20}$  -  Any 8characters
-
 
 //Email Validators
 // [A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}   - email validator
 
 
-
 //Other Validators
 //^[^ ][a-zA-Z]+( [^ ][a-zA-Z]*)*$   - Name
-
 // ^[a-zA-Z\s]+$   - All letters including white spaces
-
 // [\S]+$  - Trailing Spaces
-
 // ^[\S] -  Starting Space
-
 
 /////////////////////////////////// TextFiled Types Enum  ///////////////////////////////////
